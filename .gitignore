@@ -1,0 +1,5 @@
+.idea/
+TODO.txt
+__pycache__/
+venv/
+notebooks/.ipynb_checkpoints
