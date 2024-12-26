@@ -1,6 +1,13 @@
 # codding: utf-8
 """
 Template for argument parsing.
+
+The parameters of a fonction can be:
+- mandatory: they have to be filled in the right position
+- optional: they have default values
+
+This demo script should be run from a console with a command line along the lines of:
+"python3 python_template/argparse_template.py 1 2 -d"
 """
 
 
@@ -29,7 +36,7 @@ if __name__ == "__main__":
                         type=int,
                         choices=[0, 1, 2],
                         default=0,
-                        help="increase the output verbosity.")
+                        help="increase the verbosity level.")
     parser.add_argument("--log_file",
                         default=None,
                         help="file where the report of the game is dumped.")
